@@ -59,4 +59,11 @@
     [self.condition signal];
     [self.condition unlock];
 }
+
+-(void)broadcast{
+    [self.condition lock];
+    self.waitSignal = NO;
+    [self.condition broadcast];
+    [self.condition unlock];
+}
 @end

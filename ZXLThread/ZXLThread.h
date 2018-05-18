@@ -43,4 +43,9 @@
  线程继续
  */
 -(void)signal;
+
+/**
+ 控制的全部线程继续
+ */
+-(void)broadcast;
 @end
